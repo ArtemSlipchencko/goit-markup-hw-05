@@ -795,14 +795,13 @@ img {
     position: fixed;
     left: 0;
     top: 0;
+    transition: 500ms linear;
   }
 
   .is-hidden {
     opacity: 0;
     pointer-events: unset;
-    background-color: rgba(0, 0, 0, 0.2);
     visibility: hidden;
-    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   
@@ -814,8 +813,9 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
+    border-radius: 4px;
     transform: translate(-50%, -50%);
-    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 500ms linear;
   }
 
   .is-hidden .modal-window {
