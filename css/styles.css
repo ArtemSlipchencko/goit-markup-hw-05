@@ -810,7 +810,7 @@ img {
   }
 
   .modal-back > .modal-window {
-    transform: scale(1);
+    transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms linear;
 }
 
@@ -819,11 +819,9 @@ img {
     height: 581px;
     background-color: #fff;
     position: absolute;
-    left: 531px;
-    top: 214px;
+    top: 50%;
+    left: 50%;
     border-radius: 4px;
-    transform: translate(-50%, -50%);
-    transition: 500ms linear;
   }
 
   .is-hidden .modal-window {
