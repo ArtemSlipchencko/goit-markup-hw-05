@@ -795,7 +795,7 @@ img {
     position: fixed;
     left: 0;
     top: 0;
-    transition: 500ms linear;
+    transition: 250ms linear;
   }
 
   .is-hidden {
@@ -804,15 +804,23 @@ img {
     visibility: hidden;
   }
 
-  
+  .modal-back.is-hidden > .modal-window {
+    transform: scale(0);
+    transition: transform 250ms linear;
+  }
+
+  .modal-back > .modal-window {
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
 
   .modal-window {
     width: 528px;
     height: 581px;
     background-color: #fff;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 531px;
+    top: 214px;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     transition: 500ms linear;
